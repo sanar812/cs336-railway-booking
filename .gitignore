@@ -1,0 +1,30 @@
+# Ignore build output
+build/
+target/
+
+# Ignore compiled classes
+*.class
+
+# Ignore IDE files (IntelliJ, Eclipse, VSCode)
+.idea/
+*.iml
+*.classpath
+*.project
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore OS junk files
+.DS_Store
+Thumbs.db
+
+# Ignore jar libraries (they can be re-downloaded)
+src/main/webapp/WEB-INF/lib/*.jar
+
+# Optional: ignore temp deployment artifacts
+*.war
+*.ear
+
+# Ignore personal config or test files
+structure.txt
