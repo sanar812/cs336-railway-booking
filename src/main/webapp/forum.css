@@ -1,0 +1,208 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100%;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 10px;
+    height: 100vh;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #003366;  /* Navy Blue */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.results {
+    background-color: #e6f2ff;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #003366;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+/* Logout Button Positioning */
+.logout-form input[type="submit"] {
+	font-size: 20px;
+	background-color: #003366;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+} 
+.logout-form input[type="submit"]:hover {
+	background-color: #004080;
+} 
+.logout-form {
+	font-family: "Roboto";
+	box-sizing: border-box;
+	background-color: white;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 5px;
+	margin-right: 5px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+}
+
+button, select {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}
+
+/* General Form and Table Styling */
+input[type="text"], textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* FAQ Accordion Styling */
+.accordion {
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border: none;
+    text-align: left;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-item:hover {
+    background-color: #004080;
+}
+
+.panel {
+    padding: 15px;
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Accordion active state */
+.accordion-item.active {
+    background-color: #004080;
+}
+
+.qa-section, .submit-question, .reply-question {
+    margin-top: 30px;
+}
+
+.qa-section h2, .submit-question h2 {
+    color: #003366;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center; /* Centering all section headings */
+}
+
+.qa-section input[type="text"], .submit-question textarea {
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.submit-question form {
+    margin-top: 10px;
+}
+
+.submit-question input[type="submit"], .reply-question input[type="submit"] {
+    padding: 12px 25px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Smooth button hover transition */
+}
+
+.submit-question input[type="submit"]:hover, .reply-question input[type="submit"]:hover {
+    background-color: #004080;
+    transform: scale(1.05); /* Slightly enlarging button on hover */
+}
+
+/* FAQ Card Styling */
+.faq-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}

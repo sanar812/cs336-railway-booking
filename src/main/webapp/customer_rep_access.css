@@ -1,0 +1,181 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin-top: 10px;
+  height: auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #003366; /* Navy Blue */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  color: #555;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Logout Button Positioning */
+.logout-form {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.logout-form form {
+  margin: 0;
+}
+
+.logout-form input[type="submit"] {
+  font-size: 16px;
+  background-color: #003366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.logout-form input[type="submit"]:hover {
+  background-color: #004080;
+}
+
+/* General Form and Table Styling */
+input[type="text"], textarea, select, input[type="date"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease; /* Smooth button hover transition */
+}
+
+button:hover {
+  background-color: #004080;
+  transform: scale(1.05); /* Slightly enlarging button on hover */
+}
+
+/* Table Styling */
+.train-schedules table, .reply-question, .station-schedules, .reservations {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.train-schedules table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.train-schedules th, .train-schedules td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.reply-question, .station-schedules, .reservations {
+  margin-top: 30px;
+}
+
+.reply-question h2, .station-schedules h2, .reservations h2 {
+  color: #003366;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center; /* Centering all section headings */
+}
+
+.submit-question textarea {
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.submit-question form {
+  margin-top: 10px;
+}
+
+.submit-question input[type="submit"], .reply-question input[type="submit"] {
+  padding: 12px 25px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease; /* Smooth button hover transition */
+}
+
+.submit-question input[type="submit"]:hover, .reply-question input[type="submit"]:hover {
+  background-color: #004080;
+  transform: scale(1.05); /* Slightly enlarging button on hover */
+}
+
+.station-schedules select, .reservations select, .reservations input[type="date"] {
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+#reservation-list {
+  background-color: #e6f2ff;
+  border: 1px solid #003366;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #003366;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  bottom: 5%;
+}
